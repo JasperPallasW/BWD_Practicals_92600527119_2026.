@@ -1,0 +1,69 @@
+<html>
+    <body>
+        <!-- first task -->
+        <p id="message">Hello</p>
+        <button id="btn" onclick="change()">Change</button>
+
+        <br><br><br>
+
+        <!-- second task -->
+         <p id="title">Color</p>
+         <button id="btn" onclick="redColor()">Change Color To Red</button>
+         <button id="btn" onclick="blueColor()">Change Color To Blue</button>
+
+         <br><br><br>
+
+         <!-- third task -->
+          <p id="date">Date</p>
+          <button id="btn" onclick="dateTime()">Change Date</button>
+
+        <br><br><br>
+
+          <!-- fourth task -->
+           <input type="text" id="num1">
+           <input type="text" id="num2">
+           <button id="btn" onclick="sum()">Sum</button>
+           <div class="output" id="output"></div>
+
+           <br><br>
+
+           <!-- fifth task -->
+            <p id="box">Highligth</p>
+            <button id="btn" onclick="bgcolor()">Change Background Color</button>
+    </body>
+</html>
+
+<script>
+    //first task
+    function change(){
+    document.getElementById("message").innerText="Hi!";
+    }
+
+    //second task
+    function redColor(){
+    document.getElementById("title").style.color="red";
+    }
+
+    function blueColor(){
+    document.getElementById("title").style.color="blue";
+    }
+
+    //third task
+    function dateTime(){
+    document.getElementById("date").innerText="1:00 PM 28-10-2026";
+    }
+
+    //fourth task
+    function sum(){
+    var num1= document.getElementById('num1').value;
+    var num2= document.getElementById('num2').value;
+
+    document.getElementById('output').innerText=Number(num1) + Number(num2);
+    }
+
+    //fifth task
+    function bgcolor(){
+    document.getElementById("box").style.backgroundColor="yellow";
+    }
+
+</script>
